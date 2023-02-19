@@ -1,4 +1,3 @@
-#include <stdio.h>
 
 #include<stdio.h>
 int stack[10],choice,n,top,x,i; // Declaration of variables
@@ -9,10 +8,9 @@ void display();
 
 int main()
 {
- top = -1;     
+ top = -1;     // Initially no element in stack
  printf("\n Enter the size of STACK : ");
  scanf("%d",&n);
- printf("\nSTACK IMPLEMENTATION USING ARRAYS\n");
  do
  {
  printf("\n1.PUSH(Insertion)\n2.POP(Deletion)\n3.DISPLAY\n4.EXIT\n");
