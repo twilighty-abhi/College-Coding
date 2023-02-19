@@ -1,6 +1,6 @@
 
 #include<stdio.h>
-int stack[10],choice,n,top,x,i; // Declaration of variables
+int stack[10],ch,n,top,x,i; // Declaration of variables
 
 void push();
 void pop();
@@ -14,9 +14,9 @@ int main()
  do
  {
  printf("\n1.PUSH(Insertion)\n2.POP(Deletion)\n3.DISPLAY\n4.EXIT\n");
- printf("\nEnter the choice : ");
- scanf("%d",&choice);
- switch(choice)
+ printf("\nEnter the ch : ");
+ scanf("%d",&ch);
+ switch(ch)
  {
  case 1:
  {
@@ -34,14 +34,11 @@ int main()
  break;
  }
  case 4:
- {
  break;
- }
  default:
- {
- printf ("\nInvalid Choice\n");
- }}}
- while(choice!=4);
+ printf ("\nInvalid ch\n");
+ }}
+ while(ch!=4);
  return 0;
 }
 
