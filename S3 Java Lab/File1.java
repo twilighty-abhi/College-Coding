@@ -2,10 +2,10 @@ import java.io.*;
 import java.util.Scanner;
 class Numbers{
     public static void main(String[] args) {
-        File f = new File("numbers.txt");
+        File f = new File("numbers1.txt");
         try{
             f.createNewFile();
-            FileWriter fwrite = new FileWriter("numbers.txt");
+            FileWriter fwrite = new FileWriter("numbers1.txt");
             fwrite.write("123456");
             fwrite.close();
             Scanner s = new Scanner(f);
@@ -19,7 +19,7 @@ class Numbers{
                 a = a/10;
             }
             System.out.println(n);
-            s.close();
+          //  s.close();
         }
         catch (IOException e){
             System.out.println("An error occured");
