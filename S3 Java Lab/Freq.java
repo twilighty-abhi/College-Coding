@@ -8,6 +8,7 @@ public class Freq {
         String s = sc.nextLine();
         System.out.println("Enter the character whose frequency is to be found");
         char a = sc.next().charAt(0);
+
         for(int i = 0; i<s.length();i++){
             if(s.charAt(i) == a){
                 frequency += 1;
